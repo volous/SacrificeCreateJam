@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class Boost : BasePowerUp
 {
-   
-
+    private PlayerController pc;
     public override void Activate()
     {
-        throw new System.NotImplementedException();
+        pc = GetComponent<PlayerController>();
+        pc.speedScaler = 2;
+        pc.AddHealth();
+        Invoke("EndEffect",2);
+    }
+
+    void EndEffect()
+    {
+        pc.speedScaler = 1;
+        Destroy(this);
     }
 
     public override void UI()

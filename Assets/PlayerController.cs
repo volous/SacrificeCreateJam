@@ -9,10 +9,19 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f; // Speed of the player movement
 
     private Rigidbody2D rb;
-    private Vector2 moveDirection; 
+    private Vector2 moveDirection;
+
+    [SerializeField] private int health;
+    [SerializeField] public float speedScaler = 1;
+    
+    
+    
+    private BasePowerUp currentPowerUp;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody component attached to the player
+        currentPowerUp = gameObject.AddComponent<Boost>();
     }
     void OnMove(InputValue iv)
     {
@@ -31,5 +40,19 @@ public class PlayerController : MonoBehaviour
     {
         // Move the player based on the moveDirection and moveSpeed
         rb.velocity = moveDirection * moveSpeed;
+    }
+
+    void OnFire()
+    {
+        if (currentPowerUp!= null)
+        {
+            currentPowerUp.Activate();
+            currentPowerUp = null;
+        }
+    }
+
+    public void AddHealth()
+    {
+        health++;
     }
 }
