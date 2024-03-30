@@ -16,9 +16,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int health = 5;
     [SerializeField] private float speedScaler = 1;
     [SerializeField] private bool immobilized;
-
-    [SerializeField] private Transform pointer;
+    [SerializeField] private bool beingControlled;
+    [SerializeField] private Vector2 controlDirection;
+    [SerializeField] private float controlSpeedScaler;
     
+    
+    
+    [SerializeField] private Transform pointer;
+    private Collider2D component;
 
     private GameManager gm;
     
@@ -33,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        component = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>(); 
         gm = FindObjectOfType<GameManager>();
     }
@@ -49,9 +55,21 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Move();
+        if (beingControlled)
+        {
+            ControlledMove();
+        }
+        else
+        {
+            Move();
+        }
         ConstraintCheck();
         PointerMove();
+    }
+
+    private void ControlledMove()
+    {
+        rb.velocity = controlDirection * (moveSpeed * controlSpeedScaler);
     }
 
     private void PointerMove()
@@ -148,5 +166,29 @@ public class PlayerController : MonoBehaviour
     public int GetHealth()
     {
         return health;
+    }
+
+    public void MakePermiable(float duration)
+    {
+        component.enabled = false;
+        Invoke("MakeSolid",duration);
+    }
+
+    public void MakeSolid()
+    {
+        component.enabled = true;
+    }
+
+    public void Control(Vector2 direction,float duration,float speed)
+    {
+        beingControlled = true;
+        controlDirection = direction;
+        controlSpeedScaler = speed;
+        Invoke("LoseControl",duration);
+    }
+
+    public void LoseControl()
+    {
+        beingControlled = false;
     }
 }

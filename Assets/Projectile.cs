@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class Bomb : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
-    [SerializeField] private GameObject bombAOEPF;
+    [SerializeField] private GameObject effectPF;
     [SerializeField] private float flyTime = 1.5f;
     [SerializeField] private float flySpeed = 2;
     
@@ -26,9 +26,8 @@ public class Bomb : MonoBehaviour
         }
     }
 
-    public void Explode()
-    {
-        Instantiate(bombAOEPF,transform.position,quaternion.identity);
+    public void Explode(){
+        Instantiate(effectPF,transform.position,quaternion.identity);
         Destroy(gameObject);
     }
 

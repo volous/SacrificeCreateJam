@@ -13,7 +13,6 @@ public class DefinetlyNotAniviaWall : BasePowerUp
         Instantiate(GetComponent<PrefabHolder>().walls[Random.Range(0, 1)], 
             pc.transform.position+new Vector3(lookDirection.x,lookDirection.y,0), 
             quaternion.identity);
-        Destroy(this);
     }
 
     public override string GetName()

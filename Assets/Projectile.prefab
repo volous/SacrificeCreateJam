@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4481445129561429866}
   - component: {fileID: 2771870203605126131}
   - component: {fileID: 1553285403804546948}
-  - component: {fileID: 4879421927852747762}
   - component: {fileID: 8648037561039369540}
+  - component: {fileID: 3279277901102347040}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,22 +122,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &4879421927852747762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4274985944842772839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a30afec5172648d4d86918e4ef483a98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direction: {x: 1, y: 0}
-  bombAOEPF: {fileID: 4653975254409475605, guid: cb1457534c4364b4da9415e014f40521, type: 3}
-  flyTime: 1.5
-  owner: {fileID: 0}
 --- !u!50 &8648037561039369540
 Rigidbody2D:
   serializedVersion: 4
@@ -165,3 +149,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3279277901102347040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4274985944842772839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2e1363b0bf4ed591d7f563e8c56a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPF: {fileID: 4653975254409475605, guid: cb1457534c4364b4da9415e014f40521, type: 3}
+  flyTime: 1.5
+  flySpeed: 2
+  owner: {fileID: 0}

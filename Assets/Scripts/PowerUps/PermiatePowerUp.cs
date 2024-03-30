@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boost : BasePowerUp
+public class PermiatePowerUp : BasePowerUp
 {
     public override void OnActivate(PlayerController pc, Vector2 lookDirection)
     {
-        pc.SpeedChange(2,1);
-        pc.Heal(1);
-        Destroy(this);
+        pc.MakePermiable(4f);
     }
 
     public override string GetName()

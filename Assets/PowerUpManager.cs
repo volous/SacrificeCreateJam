@@ -22,7 +22,7 @@ public class PowerUpManager : MonoBehaviour
                 pc.AddPowerUp<BombPowerUp>();
                 break;
             case 1:
-                pc.AddPowerUp<Boost>();
+                pc.AddPowerUp<BoostPowerUp>();
                 break;
             case 2:
                 pc.AddPowerUp<DefinetlyNotAniviaWall>();
