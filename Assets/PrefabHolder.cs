@@ -6,5 +6,6 @@ public class PrefabHolder : MonoBehaviour
 {
     public GameObject BombPF;
     public GameObject BarrelPF;
+    public GameObject ConfusionPF;
     public List<GameObject> walls;
 }
