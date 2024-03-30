@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     private Vector3 moveInput;
     public float moveSpeed = 5f; // Speed of the player movement
-
+    public bool hasPowerup;
     private Rigidbody2D rb;
     private Vector2 moveDirection;
 
@@ -25,9 +25,9 @@ public class PlayerController : MonoBehaviour
     }
     void OnMove(InputValue iv)
     {
-        // Read the input value from the Input System
+        // Read the input value from the t System
         Vector2 inputVector = iv.Get<Vector2>();
-
+        Debug.Log("inhere");
         // Normalize the input vector to ensure constant movement speed diagonally
         moveDirection = inputVector.normalized;
     }
