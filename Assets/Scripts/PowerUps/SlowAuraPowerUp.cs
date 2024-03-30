@@ -11,6 +11,6 @@ public class SlowAuraPowerUp : BasePowerUp
 
     public override string GetName()
     {
-        return "Boost";
+        return "Slow Aura";
     }
 }

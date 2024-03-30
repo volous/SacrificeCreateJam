@@ -11,6 +11,6 @@ public class BulletBillPowerUp : BasePowerUp
 
     public override string GetName()
     {
-        return "Boost";
+        return "Bullet Bill";
     }
 }

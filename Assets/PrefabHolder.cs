@@ -8,4 +8,5 @@ public class PrefabHolder : MonoBehaviour
     public List<GameObject> walls;
     public GameObject slowArea;
     public GameObject healingPotion;
+    public GameObject swapper;
 }

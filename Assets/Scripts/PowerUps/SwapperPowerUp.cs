@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
-public class BombPowerUp : BasePowerUp
+public class SwapperPowerUp : BasePowerUp
 {
     public override void OnActivate(PlayerController pc, Vector2 lookDirection)
     {
-       Instantiate(GetComponent<PrefabHolder>().BombPF,
+       Instantiate(GetComponent<PrefabHolder>().swapper,
            pc.transform.position+new Vector3(lookDirection.x,lookDirection.y),
            Quaternion.identity).GetComponent<Projectile>().Setup(lookDirection,pc.gameObject);
     }

@@ -11,6 +11,6 @@ public class PermiatePowerUp : BasePowerUp
 
     public override string GetName()
     {
-        return "Boost";
+        return "Ghost Form";
     }
 }
