@@ -8,8 +8,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private Vector3 moveInput;
-    public float moveSpeed = 5f; // Speed of the player movement
-    public bool hasPowerup;
+    public float moveSpeed = 5f; 
     private Rigidbody2D rb;
     private Vector2 moveDirection;
     [SerializeField] private Vector2 lookDirection;
@@ -50,7 +49,6 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-       
         Move();
         ConstraintCheck();
         PointerMove();
@@ -79,14 +77,14 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        rb.velocity =immobilized ? Vector3.zero: moveDirection * moveSpeed;
+        rb.velocity =immobilized ? Vector3.zero: moveDirection * (moveSpeed * speedScaler);
     }
 
     void OnFire()
     {
         if (currentPowerUp!= null)
         {
-            currentPowerUp.Activate(this);
+            currentPowerUp.Activate(this, lookDirection);
             currentPowerUp = null;
         }
     }
@@ -99,7 +97,7 @@ public class PlayerController : MonoBehaviour
     public void Damage(int damage)
     {
         health -= damage;
-        if (health < 0) 
+        if (health <= 0) 
         {
             gm.EndGame();
         }
@@ -132,9 +130,9 @@ public class PlayerController : MonoBehaviour
         return lookDirection;
     }
 
-    public void AddPowerUp()
+    public void AddPowerUp<T>()where T : BasePowerUp
     {
-        currentPowerUp = gameObject.AddComponent<BombPowerUp>();
+        currentPowerUp = gameObject.AddComponent<T>();
     }
 
     public bool HasPowerUp()

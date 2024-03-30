@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 8773871758987792562}
   - component: {fileID: 1932919329349398288}
   - component: {fileID: 8401144418639285110}
-  - component: {fileID: 7019860899764176648}
+  - component: {fileID: 7530159457060309256}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -253,9 +253,9 @@ MonoBehaviour:
   lookDirection: {x: 1, y: 0}
   health: 3
   speedScaler: 1
-  immobilized: 1
+  immobilized: 0
   pointer: {fileID: 3857883041526881281}
-  currentPowerUp: {fileID: 7019860899764176648}
+  currentPowerUp: {fileID: 0}
 --- !u!50 &1932919329349398288
 Rigidbody2D:
   serializedVersion: 4
@@ -318,7 +318,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &7019860899764176648
+--- !u!114 &7530159457060309256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -327,7 +327,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7705637614706464577}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 619ea4c2e80747aba4ab5a0af253229f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d459463fa01982478becdc59fd6e633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BombPF: {fileID: 4274985944842772839, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+  walls:
+  - {fileID: 3794722018986066866, guid: 72bef07de85a07c4382bf530610d24f9, type: 3}

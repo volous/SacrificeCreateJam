@@ -5,45 +5,24 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 public class PowerupPickup : MonoBehaviour
 {
-    private PlayerController pc;
-    private Boost _boostPower;
-    private DefinetlyNotAniviaWall _wallPower;
     private GameObject _hitPowerupCube;
     
-    [SerializeField] private List<BasePowerUp> _powerups;
-    
-    public BasePowerUp currentPowerUp;
+    [SerializeField] private PowerUpManager powerUpManager;
 
     private void Start()
     {
-        pc = GetComponent<PlayerController>();
-        _boostPower = GetComponent<Boost>();
-        _wallPower = GetComponent<DefinetlyNotAniviaWall>();
-        Debug.Log(_powerups.Count);
+        powerUpManager = FindObjectOfType<PowerUpManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "PowerUp")
+        if (col.CompareTag("Player"))
         {
-            var powerupSelector = Random.Range(0, _powerups.Count);
-            pc.hasPowerup = true;
-            _hitPowerupCube = col.gameObject;
-            //destroy powerup cube
-            currentPowerUp = _powerups[powerupSelector];
-            Destroy(col.gameObject);
+            if (col.TryGetComponent(out PlayerController pc)&& !pc.HasPowerUp())
+            {
+                powerUpManager.GivePowerUp(pc);
+                Destroy(gameObject);
+            }
         }
     }
-    
-    //add which powerup it is on player
-    private void GivePlayerPowerup()
-    {
-        if (pc.hasPowerup)
-        {
-            //get the different powerups
-            
-        }
-    }
-    
-    
 }

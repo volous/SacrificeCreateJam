@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Boost : BasePowerUp
 {
-    public override void Activate(PlayerController pc)
+    public override void OnActivate(PlayerController pc, Vector2 lookDirection)
     {
-        pc = GetComponent<PlayerController>();
         pc.SpeedChange(2,1);
         pc.Heal(1);
         Destroy(this);
