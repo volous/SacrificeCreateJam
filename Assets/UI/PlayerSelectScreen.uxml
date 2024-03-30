@@ -1,19 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Style.uss?fileID=7433441132597879392&amp;guid=cd741ed8ed02ce34285fa10e0cea4bd4&amp;type=3#Style" />
-    <ui:VisualElement name="PlayerSelectContainer" style="width: 1920px; height: 1080px;">
-        <ui:VisualElement name="Players" style="-unity-font: url(&quot;project://database/Assets/UI%20assets/Fonts/ThaleahFat.ttf?fileID=12800000&amp;guid=77d17bbed015a754d97c2bca3c52f7a5&amp;type=3#ThaleahFat&quot;); -unity-font-definition: initial; height: 864px; position: absolute; left: 5%; margin-top: 0; top: 15%;">
-            <ui:VisualElement name="P1" style="flex-grow: 1;">
-                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P1Text" style="font-size: 100px;" />
-            </ui:VisualElement>
-            <ui:VisualElement name="P2" style="flex-grow: 1;">
-                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P2Text" style="font-size: 100px;" />
-            </ui:VisualElement>
-            <ui:VisualElement name="P3" style="flex-grow: 1;">
-                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P3Text" style="font-size: 100px;" />
-            </ui:VisualElement>
-            <ui:VisualElement name="P4" style="flex-grow: 1;">
-                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P4Text" style="font-size: 100px;" />
-            </ui:VisualElement>
-        </ui:VisualElement>
+    <ui:VisualElement name="PlayerSelectContainer" style="flex-grow: 1;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: column; align-items: center; width: 240px; height: 135px; justify-content: center; align-self: center;" />
     </ui:VisualElement>
 </ui:UXML>
