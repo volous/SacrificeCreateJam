@@ -1,8 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1;">
-        <ui:VisualElement style="flex-grow: 1; align-self: center; justify-content: center;">
-            <ui:Label tabindex="-1" text="MORS" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: center;" />
-            <ui:Button text="Start Game" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Start" />
-        </ui:VisualElement>
+    <Style src="project://database/Assets/UI/MainMenuScreenStyle.uss?fileID=7433441132597879392&amp;guid=cd741ed8ed02ce34285fa10e0cea4bd4&amp;type=3#MainMenuScreenStyle" />
+    <ui:VisualElement name="StartScreenContainer" style="flex-grow: 1; flex-direction: column; justify-content: center; align-self: center; background-image: url(&quot;project://database/Assets/UI%20assets/TitleScreenBackgroundPlaceholder.png?fileID=2800000&amp;guid=c7d8678340ba8b147a829e043076c4d5&amp;type=3#TitleScreenBackgroundPlaceholder&quot;); width: 1920px; height: 1080px; align-items: center;">
+        <ui:Label tabindex="-1" text="Press any button to start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartScreen" class="header" style="font-size: 80px;" />
     </ui:VisualElement>
 </ui:UXML>
