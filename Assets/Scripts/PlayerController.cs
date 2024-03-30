@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
@@ -11,17 +12,20 @@ public class PlayerController : MonoBehaviour
     public bool hasPowerup;
     private Rigidbody2D rb;
     private Vector2 moveDirection;
-
+    [SerializeField] private Vector2 lookDirection;
+    
     [SerializeField] private int health = 5;
     [SerializeField] private float speedScaler = 1;
     [SerializeField] private bool immobilized;
+
+    [SerializeField] private Transform pointer;
     
 
     private GameManager gm;
     
     
     
-    private BasePowerUp currentPowerUp;
+    [SerializeField] private BasePowerUp currentPowerUp;
 
     private void Awake()
     {
@@ -30,8 +34,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody component attached to the player
-        currentPowerUp = gameObject.AddComponent<Boost>();
+        rb = GetComponent<Rigidbody2D>(); 
         gm = FindObjectOfType<GameManager>();
     }
     void OnMove(InputValue iv)
@@ -39,11 +42,23 @@ public class PlayerController : MonoBehaviour
         Vector2 inputVector = iv.Get<Vector2>();
         moveDirection = inputVector.normalized;
     }
+
+    void OnLook(InputValue iv)
+    {
+        Vector2 inputVector = iv.Get<Vector2>();
+        lookDirection = inputVector.normalized;
+    }
     void FixedUpdate()
     {
        
         Move();
         ConstraintCheck();
+        PointerMove();
+    }
+
+    private void PointerMove()
+    {
+        pointer.rotation = quaternion.AxisAngle(Vector3.forward,Mathf.Atan2(lookDirection.y,lookDirection.x));
     }
 
     private void ConstraintCheck()
@@ -69,9 +84,12 @@ public class PlayerController : MonoBehaviour
 
     void OnFire()
     {
+        
+        print("fire");
+        
         if (currentPowerUp!= null)
         {
-            currentPowerUp.Activate();
+            currentPowerUp.Activate(this);
             currentPowerUp = null;
         }
     }
@@ -110,5 +128,15 @@ public class PlayerController : MonoBehaviour
     public void Immobilize()
     {
         immobilized = true;
+    }
+
+    public Vector2 GetLookDirection()
+    {
+        return lookDirection;
+    }
+
+    public void AddPowerUp()
+    {
+        currentPowerUp = gameObject.AddComponent<BombPowerUp>();
     }
 }

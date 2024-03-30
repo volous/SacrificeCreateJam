@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Boost : BasePowerUp
 {
-    private PlayerController pc;
-    public override void Activate()
+    public override void Activate(PlayerController pc)
     {
         pc = GetComponent<PlayerController>();
         pc.SpeedChange(2,1);
         pc.Heal(1);
+        Destroy(this);
     }
 
     

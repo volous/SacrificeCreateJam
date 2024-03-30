@@ -10,7 +10,7 @@ public class DefinetlyNotAniviaWall : BasePowerUp
     private Vector2 aim;
     private PlayerController pc;
     private List<Transform> _walls;
-    public override void Activate()
+    public override void Activate(PlayerController pc1)
     {
         pc = GetComponent<PlayerController>();
         //need to add the aim and some distance once that is implemented
