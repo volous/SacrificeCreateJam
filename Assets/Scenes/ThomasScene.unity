@@ -550,8 +550,9 @@ GameObject:
   - component: {fileID: 326759159}
   - component: {fileID: 326759158}
   - component: {fileID: 326759157}
-  - component: {fileID: 326759156}
   - component: {fileID: 326759163}
+  - component: {fileID: 326759156}
+  - component: {fileID: 326759164}
   m_Layer: 0
   m_Name: Circle (1)
   m_TagString: Player
@@ -651,9 +652,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   hasPowerup: 0
+  lookDirection: {x: 0, y: 0}
   health: 1
   speedScaler: 1
   immobilized: 0
+  pointer: {fileID: 0}
+  currentPowerUp: {fileID: 0}
 --- !u!114 &326759160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,6 +830,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b86f5e27298b96a4283b2cbd5e10d5e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _powerups:
+  - {fileID: 326759156}
+  - {fileID: 326759164}
+  currentPowerUp: {fileID: 0}
+--- !u!114 &326759164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326759155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468063ce55d7e1445a525caa49941815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &438448615
