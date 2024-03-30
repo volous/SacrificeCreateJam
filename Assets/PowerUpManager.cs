@@ -25,7 +25,7 @@ public class PowerUpManager : MonoBehaviour
                 pc.AddPowerUp<BoostPowerUp>();
                 break;
             case 2:
-                pc.AddPowerUp<DefinetlyNotAniviaWall>();
+                pc.AddPowerUp<DashSlashFlash>();
                 break;
             default:
                 pc.AddPowerUp<BombPowerUp>();
