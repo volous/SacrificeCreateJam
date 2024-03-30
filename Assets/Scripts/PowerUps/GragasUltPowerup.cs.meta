@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9aed2ece45167fa4793499f670ae56c3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - barrelPF: {fileID: 4653975254409475605, guid: 54a9fadeabdedd74da6ba147eb22aae3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

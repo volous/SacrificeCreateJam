@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     {
         players.Add(pc);
         pc.Immobilize();
+        pc.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         numberOfPlayers++;
         pc.transform.position = new Vector3(-5,5-(numberOfPlayers*2),0);
         uiHandler.AddPlayer(pc);
@@ -42,6 +43,7 @@ public class PlayerManager : MonoBehaviour
         foreach (PlayerController playerController in players)
         {
             playerController.Immobilize();
+            playerController.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         }
     }
 }

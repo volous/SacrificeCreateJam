@@ -249,7 +249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  hasPowerup: 0
   lookDirection: {x: 1, y: 0}
   health: 3
   speedScaler: 1
@@ -331,5 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BombPF: {fileID: 4274985944842772839, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+  BarrelPF: {fileID: 4274985944842772839, guid: 1da4d3fb9d439364c958c6dac152457f, type: 3}
   walls:
   - {fileID: 3794722018986066866, guid: 72bef07de85a07c4382bf530610d24f9, type: 3}

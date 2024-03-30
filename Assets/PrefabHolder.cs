@@ -5,5 +5,6 @@ using UnityEngine;
 public class PrefabHolder : MonoBehaviour
 {
     public GameObject BombPF;
+    public GameObject BarrelPF;
     public List<GameObject> walls;
 }
