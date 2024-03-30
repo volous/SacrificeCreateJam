@@ -8,14 +8,17 @@ public class BombPowerUp : BasePowerUp
     
     public override void Activate(PlayerController pc)
     {
-        Bomb b = Instantiate(BombPF,pc.transform.position,Quaternion.identity).GetComponent<Bomb>();
-        b.Setup(pc.GetLookDirection(),pc.gameObject);
+        Vector2 lookDirection = pc.GetLookDirection();
+        Bomb b = Instantiate(BombPF,pc.transform.position+new Vector3(lookDirection.x,lookDirection.y),Quaternion.identity).GetComponent<Bomb>();
+        b.Setup(lookDirection,pc.gameObject);
         Destroy(this);
     }
 
-    
-    public override void UI()
+    public override string GetName()
     {
-        
+        return "Bomb";
     }
+
+
+    
 }

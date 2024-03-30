@@ -84,9 +84,6 @@ public class PlayerController : MonoBehaviour
 
     void OnFire()
     {
-        
-        print("fire");
-        
         if (currentPowerUp!= null)
         {
             currentPowerUp.Activate(this);
@@ -138,5 +135,20 @@ public class PlayerController : MonoBehaviour
     public void AddPowerUp()
     {
         currentPowerUp = gameObject.AddComponent<BombPowerUp>();
+    }
+
+    public bool HasPowerUp()
+    {
+        return currentPowerUp != null;
+    }
+
+    public string PowerUpName()
+    {
+        return HasPowerUp()? currentPowerUp.GetName():"";
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 }

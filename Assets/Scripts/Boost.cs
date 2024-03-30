@@ -12,9 +12,8 @@ public class Boost : BasePowerUp
         Destroy(this);
     }
 
-    
-    public override void UI()
+    public override string GetName()
     {
-        
+        return "Boost";
     }
 }

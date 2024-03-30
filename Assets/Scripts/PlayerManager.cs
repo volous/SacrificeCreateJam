@@ -8,11 +8,13 @@ public class PlayerManager : MonoBehaviour
     private List<PlayerController> players = new ();
     [SerializeField] private int numberOfPlayers;
     [SerializeField] private MultiplayerCamera multiCam;
-
+    [SerializeField] private UIHandler uiHandler;
+    
 
     private void Start()
     {
         multiCam = FindObjectOfType<MultiplayerCamera>();
+        uiHandler = GetComponent<UIHandler>();
     }
 
     public void AddPlayer(PlayerController pc)
@@ -21,6 +23,7 @@ public class PlayerManager : MonoBehaviour
         pc.Immobilize();
         numberOfPlayers++;
         pc.transform.position = new Vector3(-5,5-(numberOfPlayers*2),0);
+        uiHandler.AddPlayer(pc);
     }
 
     public void ReleasePlayers()

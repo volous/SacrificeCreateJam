@@ -19,8 +19,8 @@ public class DefinetlyNotAniviaWall : BasePowerUp
         _wall.Add(_newWall);
     }
 
-    public override void UI()
+    public override string GetName()
     {
-        throw new System.NotImplementedException();
+        return "Bone Wall";
     }
 }

@@ -250,8 +250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   hasPowerup: 0
-  lookDirection: {x: 0, y: 0}
-  health: 0
+  lookDirection: {x: 1, y: 0}
+  health: 3
   speedScaler: 1
   immobilized: 1
   pointer: {fileID: 3857883041526881281}
