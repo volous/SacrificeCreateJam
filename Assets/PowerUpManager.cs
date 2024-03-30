@@ -25,7 +25,7 @@ public class PowerUpManager : MonoBehaviour
                 pc.AddPowerUp<Boost>();
                 break;
             case 2:
-                pc.AddPowerUp<DashSlashFlash>();
+                pc.AddPowerUp<SwappingPowerUp>();
                 break;
             default:
                 pc.AddPowerUp<BombPowerUp>();
