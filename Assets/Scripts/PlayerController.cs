@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,28 +12,36 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveDirection;
 
-    [SerializeField] private int health;
-    [SerializeField] public float speedScaler = 1;
+    [SerializeField] private int health = 5;
+    [SerializeField] private float speedScaler = 1;
+    [SerializeField] private bool immobilized;
+    
+
+    private GameManager gm;
     
     
     
     private BasePowerUp currentPowerUp;
-    
+
+    private void Awake()
+    {
+        FindObjectOfType<PlayerManager>().AddPlayer(this);
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody component attached to the player
         currentPowerUp = gameObject.AddComponent<Boost>();
+        gm = FindObjectOfType<GameManager>();
     }
     void OnMove(InputValue iv)
     {
-        // Read the input value from the t System
         Vector2 inputVector = iv.Get<Vector2>();
-        Debug.Log("inhere");
-        // Normalize the input vector to ensure constant movement speed diagonally
         moveDirection = inputVector.normalized;
     }
     void FixedUpdate()
     {
+       
         Move();
         ConstraintCheck();
     }
@@ -55,8 +64,7 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        // Move the player based on the moveDirection and moveSpeed
-        rb.velocity = moveDirection * moveSpeed;
+        rb.velocity =immobilized ? Vector3.zero: moveDirection * moveSpeed;
     }
 
     void OnFire()
@@ -68,8 +76,39 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void AddHealth()
+    public void Heal(int healing)
     {
-        health++;
+        health+= healing;
+    }
+
+    public void Damage(int damage)
+    {
+        health -= damage;
+        if (health < 0) 
+        {
+            gm.EndGame();
+        }
+    }
+
+    public void SpeedChange(float speed, float time)
+    {
+        speedScaler = speed;
+        Invoke("ResetSpeed",time);
+        
+    }
+
+    public void ResetSpeed()
+    {
+        speedScaler = 1;
+    }
+
+    public void Mobilize()
+    {
+        immobilized = false;
+    }
+
+    public void Immobilize()
+    {
+        immobilized = true;
     }
 }

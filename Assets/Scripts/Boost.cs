@@ -8,19 +8,13 @@ public class Boost : BasePowerUp
     public override void Activate()
     {
         pc = GetComponent<PlayerController>();
-        pc.speedScaler = 2;
-        pc.AddHealth();
-        Invoke("EndEffect",2);
+        pc.SpeedChange(2,1);
+        pc.Heal(1);
     }
 
-    void EndEffect()
-    {
-        pc.speedScaler = 1;
-        Destroy(this);
-    }
-
+    
     public override void UI()
     {
-        throw new System.NotImplementedException();
+        
     }
 }
