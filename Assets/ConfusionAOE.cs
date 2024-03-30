@@ -11,7 +11,7 @@ public class ConfusionAOE : MonoBehaviour
         {
             if (col.TryGetComponent(out PlayerController playerController))
             {
-                playerController.SpeedChange(-playerController.moveSpeed, 4f);
+                playerController.SpeedChange(-playerController.moveSpeed/4, 4f);
             }
         }
     }
