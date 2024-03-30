@@ -12,8 +12,8 @@ public class SwappingPowerUp : BasePowerUp
     private Vector2 initialPosition;
     private void Start()
     {
-        Debug.Log(FindObjectsOfType<PlayerController>()[0].transform.position);
-        Debug.Log(FindObjectsOfType<PlayerController>()[1].transform.position);
+        //Debug.Log(FindObjectsOfType<PlayerController>()[0].transform.position);
+        //Debug.Log(FindObjectsOfType<PlayerController>()[1].transform.position);
     }
 
     public override void OnActivate(PlayerController pc, Vector2 lookDirection)

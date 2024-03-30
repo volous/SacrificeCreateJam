@@ -45,7 +45,8 @@ public class PlayerController : MonoBehaviour
     void OnLook(InputValue iv)
     {
         Vector2 inputVector = iv.Get<Vector2>();
-        lookDirection = inputVector.normalized;
+        if (inputVector != Vector2.zero)
+            lookDirection = inputVector.normalized;
     }
     void FixedUpdate()
     {
