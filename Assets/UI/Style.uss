@@ -51,3 +51,9 @@
     align-items: center;
     transition-duration: 0.25s;
 }
+
+.playerLabel {
+    -unity-font: url("project://database/Assets/UI%20assets/Fonts/ThaleahFat.ttf?fileID=12800000&guid=77d17bbed015a754d97c2bca3c52f7a5&type=3#ThaleahFat");
+    -unity-font-definition: initial;
+    font-size: 80px;
+}

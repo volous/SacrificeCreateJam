@@ -1,6 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Style.uss?fileID=7433441132597879392&amp;guid=cd741ed8ed02ce34285fa10e0cea4bd4&amp;type=3#Style" />
     <ui:VisualElement name="PlayerSelectContainer" style="flex-grow: 1;">
-        <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: column; align-items: center; width: 240px; height: 135px; justify-content: center; align-self: center;" />
+        <ui:VisualElement name="VisualElement" class="playerLabel" style="align-items: auto; flex-direction: column; justify-content: center; align-self: flex-start; height: 864px; margin-top: 114px; margin-right: 114px; margin-bottom: 114px; margin-left: 114px;">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P1Text" style="align-items: center; position: relative; top: auto; align-self: center; bottom: auto;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P2Text" style="align-items: center; top: auto; position: relative; align-self: center;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P3Text" style="align-items: center; top: auto; position: relative; align-self: center;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P4Text" style="align-items: center; top: auto; position: relative; align-self: center;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
