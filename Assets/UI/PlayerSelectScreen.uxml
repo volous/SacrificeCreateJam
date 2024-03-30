@@ -1,11 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Style.uss?fileID=7433441132597879392&amp;guid=cd741ed8ed02ce34285fa10e0cea4bd4&amp;type=3#Style" />
-    <ui:VisualElement name="PlayerSelectContainer" style="flex-grow: 1;">
-        <ui:VisualElement name="VisualElement" class="playerLabel" style="align-items: auto; flex-direction: column; justify-content: center; align-self: flex-start; height: 864px; margin-top: 114px; margin-right: 114px; margin-bottom: 114px; margin-left: 114px;">
-            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P1Text" style="align-items: center; position: relative; top: auto; align-self: center; bottom: auto;" />
-            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P2Text" style="align-items: center; top: auto; position: relative; align-self: center;" />
-            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P3Text" style="align-items: center; top: auto; position: relative; align-self: center;" />
-            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P4Text" style="align-items: center; top: auto; position: relative; align-self: center;" />
+    <ui:VisualElement name="PlayerSelectContainer" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20assets/Background.png?fileID=2800000&amp;guid=c67a6b6d40abe3a478e2c908acaadeb8&amp;type=3#Background&quot;);">
+        <ui:VisualElement name="VisualElement" class="playerLabel" style="align-items: auto; flex-direction: column; justify-content: center; align-self: flex-start; height: 864px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; top: 20%; left: 384px; color: rgb(255, 255, 255);">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P1Text" style="align-items: center; position: relative; top: auto; align-self: center; bottom: auto; height: 200px; -unity-text-align: upper-left;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P2Text" style="align-items: center; top: auto; position: relative; align-self: center; height: 200px; -unity-text-align: upper-left;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P3Text" style="align-items: center; top: auto; position: relative; align-self: center; height: 200px; -unity-text-align: upper-left;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P4Text" style="align-items: center; top: auto; position: relative; align-self: center; height: 200px; -unity-text-align: upper-left;" />
         </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; position: absolute; width: 288px; height: 1016px; background-image: url(&quot;project://database/Assets/UI%20assets/IngamePlayersUI.png?fileID=2800000&amp;guid=058ce8d7077cc58409860f568aa50ef5&amp;type=3#IngamePlayersUI&quot;); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; left: 32px; top: 32px;" />
     </ui:VisualElement>
 </ui:UXML>
