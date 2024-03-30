@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeec9e4b5b544ef408be74191d047d06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 2
   lookDirection: {x: 1, y: 0}
   health: 3
   speedScaler: 1
@@ -337,3 +337,4 @@ MonoBehaviour:
   - {fileID: 3794722018986066866, guid: 72bef07de85a07c4382bf530610d24f9, type: 3}
   slowArea: {fileID: 2359872487351595347, guid: 371b227634fb4bf4cb165056b705f1c8, type: 3}
   healingPotion: {fileID: 7444258311380966802, guid: 5c7fe8afc5c863848b93b0d58976fa53, type: 3}
+  swapper: {fileID: 0}

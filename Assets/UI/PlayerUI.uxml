@@ -1,8 +1,17 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1; padding-top: 20px; padding-bottom: 20px;">
-        <ui:VisualElement style="flex-grow: 1; background-color: rgba(64, 0, 0, 0.72);">
-            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PowerUpText" text="Bone Wall" />
-            <ui:Label tabindex="-1" text="HP:5" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Health" />
+    <Style src="project://database/Assets/UI/IngameUss.uss?fileID=7433441132597879392&amp;guid=b970f4a4c6eb725428bc6e062ea4c502&amp;type=3#IngameUss" />
+    <ui:VisualElement style="flex-grow: 0; padding-top: 20px; padding-bottom: 20px; height: 202px; max-height: none; min-height: auto; flex-shrink: 0;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(64, 0, 0, 0);">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; height: 65px; max-height: 77px; width: 216px;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20assets/Portrait.png?fileID=2800000&amp;guid=51e40b0ca42b48c4db5ea88c8b685cdd&amp;type=3#Portrait&quot;);" />
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20assets/Portrait.png?fileID=2800000&amp;guid=51e40b0ca42b48c4db5ea88c8b685cdd&amp;type=3#Portrait&quot;); visibility: hidden;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="HP3" class="HPBar" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/UI%20assets/HealthBar1.png?fileID=2800000&amp;guid=9b2bad68659285c4cabcbf812b465d6f&amp;type=3#HealthBar1&quot;);" />
+            <ui:VisualElement name="HP2" class="HPBar" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/UI%20assets/HealthBar2.png?fileID=2800000&amp;guid=f653f8edb6e902046a2a58196a635c1f&amp;type=3#HealthBar2&quot;); display: flex; visibility: visible;" />
+            <ui:VisualElement name="HP0" class="HPBar" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/UI%20assets/HealthBar4.png?fileID=2800000&amp;guid=ea8c986783a090f4d84207da52e601d7&amp;type=3#HealthBar4&quot;); display: none;" />
+            <ui:VisualElement name="HP1" class="HPBar" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/UI%20assets/HealthBar3.png?fileID=2800000&amp;guid=13aa2893e352c8c4fbbbab0aedbb753f&amp;type=3#HealthBar3&quot;); display: flex;" />
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PowerUpText" text="Bone Wall" style="display: none;" />
+            <ui:Label tabindex="-1" text="HP:5" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Health" style="display: none;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

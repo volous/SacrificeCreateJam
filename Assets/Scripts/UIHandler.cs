@@ -10,7 +10,7 @@ public class UIHandler : MonoBehaviour
     VisualElement root;
     [SerializeField] private VisualTreeAsset playerUI;
     [SerializeField] private List<PlayerController> players;
-    [SerializeField] private Dictionary<PlayerController,VisualElement> playersAndUI = new Dictionary<PlayerController, VisualElement>();
+    [SerializeField] private Dictionary<PlayerController,VisualElement> playersAndUI = new();
     
     private void Start()
     {
@@ -30,7 +30,11 @@ public class UIHandler : MonoBehaviour
         foreach (var (pc, ui) in playersAndUI)
         {
             ui.Q<Label>("PowerUpText").text = pc.PowerUpName();
-            ui.Q<Label>("Health").text = "HP:" +pc.GetHealth();
+            //ui.Q<Label>("Health").text = "HP:" +pc.GetHealth();
+            for (int i = 0; i < 4; i++)
+            {
+                ui.Q<VisualElement>("HP" + i).style.display = i == pc.GetHealth()? DisplayStyle.Flex:DisplayStyle.None;
+            }
         }
     }
 }

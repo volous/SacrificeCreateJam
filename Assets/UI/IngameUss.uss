@@ -1,0 +1,4 @@
+.HPBar {
+    width: 220px;
+    height: 40px;
+}

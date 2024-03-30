@@ -109,7 +109,10 @@ public class PlayerController : MonoBehaviour
 
     public void Heal(int healing)
     {
-        health+= healing;
+        if (health<3)
+        {
+            health+= healing;
+        }
     }
 
     public void Damage(int damage)

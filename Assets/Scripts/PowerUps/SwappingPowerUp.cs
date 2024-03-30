@@ -6,7 +6,7 @@ public class SwappingPowerUp : BasePowerUp
 {
     public override void OnActivate(PlayerController pc, Vector2 lookDirection)
     {
-        
+        //Not made yet
     }
 
     public override string GetName()
