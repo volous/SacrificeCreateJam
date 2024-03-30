@@ -34,8 +34,25 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Move();
-
+        ConstraintCheck();
     }
+
+    private void ConstraintCheck()
+    {
+        if (transform.position.y > 4)
+        {
+            Vector3 pos = transform.position;
+            pos.y = 4;
+            transform.position = pos;
+        }
+        if (transform.position.y < -4)
+        {
+            Vector3 pos = transform.position;
+            pos.y = -4;
+            transform.position = pos;
+        }
+    }
+
     void Move()
     {
         // Move the player based on the moveDirection and moveSpeed
