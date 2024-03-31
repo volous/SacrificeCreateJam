@@ -15,7 +15,7 @@ public class ShootPowerUp : BasePowerUp
 
     public override string GetName()
     {
-        return "Bomb";
+        return "Healing Potion";
     }
 
 
