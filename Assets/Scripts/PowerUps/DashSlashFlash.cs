@@ -7,6 +7,7 @@ public class DashSlashFlash : BasePowerUp
     
     public override void OnActivate(PlayerController pc, Vector2 lookDirection)
     {
+        FindObjectOfType<AudioManager>().Play("Flash");
         pc.gameObject.transform.position += new Vector3(lookDirection.x, lookDirection.y, 0) * 1.5f;
         Destroy(this);
     }

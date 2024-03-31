@@ -3101,7 +3101,25 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Confusion
     clip: {fileID: 8300000, guid: 678310cb66f19b041ac6931a23112511, type: 3}
-    volume: 0.5
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flash
+    clip: {fileID: 8300000, guid: b92e387c692fc0c4dac07fdef6d3d556, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Throw
+    clip: {fileID: 8300000, guid: e8efe3fe75b94d74d986492c9a879418, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Heal
+    clip: {fileID: 8300000, guid: c187d9d3f3717054c907787381367a63, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
