@@ -8,7 +8,7 @@ public class StartScreenHandler : MonoBehaviour
 {
     void Start()
     {
-        GetComponent<UIDocument>().rootVisualElement.Q<Button>("Start").clicked += StartGame;
+        GetComponent<UIDocument>().rootVisualElement.Q<Button>("PlayButton").clicked += StartGame;
     }
 
     void StartGame()
