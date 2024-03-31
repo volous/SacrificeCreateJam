@@ -10,6 +10,7 @@ public class Hook : MonoBehaviour
     [SerializeField] private GameObject owner;
 
     [SerializeField] private float hookTime = 0.5f;
+    [SerializeField] private Sprite closedHand;
     private float hookTimer = 0f;
 
     private Vector3 hitPos;
@@ -39,6 +40,7 @@ public class Hook : MonoBehaviour
                 hitPos = playerController.transform.position;
                 playerController.GetComponent<Collider2D>().enabled = false;
                 hasHitPlayer = true;
+                GetComponent<SpriteRenderer>().sprite = closedHand;
                 //HookPlayer();
             }
         }
