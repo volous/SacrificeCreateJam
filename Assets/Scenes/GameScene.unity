@@ -3094,7 +3094,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Bomb
-    clip: {fileID: 8300000, guid: 4a54a85071ebb9d40a40c3066f92ee5d, type: 3}
+    clip: {fileID: 8300000, guid: 0c930ebef232cce4e86193e9d719d106, type: 3}
     volume: 1
     pitch: 1
     loop: 0
