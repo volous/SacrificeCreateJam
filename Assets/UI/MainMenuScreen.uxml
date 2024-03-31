@@ -4,7 +4,7 @@
         <ui:Label tabindex="-1" text="Main Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MainMenu" class="body" style="align-self: flex-start; margin-left: 15px; margin-top: 0; margin-bottom: 0; margin-right: 0;" />
         <ui:Label tabindex="-1" text="*Game title*" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="header" style="top: auto;" />
         <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; justify-content: flex-start; align-items: center; flex-direction: column;">
-            <ui:Button text="Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartButton" class="button" style="bottom: auto; top: 275px; -unity-text-align: middle-center; display: flex;" />
+            <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayButton" class="button" style="bottom: auto; top: 275px; -unity-text-align: middle-center; display: flex;" />
             <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SettingsButton" class="button" style="top: 325px; display: flex;" />
             <ui:Button text="Credits" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CreditsButton" class="button" style="top: 375px; display: flex;" />
             <ui:Button text="Quit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuitButton" class="button" style="top: 425px; display: flex;" />
