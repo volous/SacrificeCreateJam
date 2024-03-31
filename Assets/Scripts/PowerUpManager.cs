@@ -50,6 +50,9 @@ public class PowerUpManager : MonoBehaviour
             case 10:
                 pc.AddPowerUp<PermiatePowerUp>();
                 break;
+            case 11:
+                pc.AddPowerUp<ShootPowerUp>();
+                break;
             default:
                 pc.AddPowerUp<BombPowerUp>();
                 break;

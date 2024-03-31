@@ -1,0 +1,1104 @@
+fileFormatVersion: 2
+guid: de17a17f38354e24fbd44b898d2faad4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HealingEffect 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1476
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f64ea894cdf19418419615d46bd2f1
+      internalID: -620176831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1476
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f632b0941ce00db4195391f3b11efa06
+      internalID: 1096673140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1476
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae2c6b222fc8e244b143f9bb6fdbc03
+      internalID: -1801978912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_3
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1476
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccb94d584f7bb74a92ea894a34ba457
+      internalID: 1205805374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_4
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1476
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef54c5a0e8978a443a0e87674690d604
+      internalID: 1814506763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_5
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1476
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888cb2a26d6e9be47aa1584aa3bec911
+      internalID: -722842313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_6
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1476
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131e667b5e74e2540900543c777c0719
+      internalID: -1856111617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da9031a61cc4d949b24b857b17a8e09
+      internalID: 1232434474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1230
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9715f274f73c84346b53922f98816879
+      internalID: -759780643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_9
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1230
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74593c8e01b1ab4f80591ba507c32d1
+      internalID: -1323818021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1230
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ae0abff8f6d1e41a9ebb44b0b48cc8
+      internalID: -274096013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_11
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1230
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705b3f601cf4257488dee19baf6fdbea
+      internalID: 1090341352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_12
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1230
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0661eb83ebaf344e898a21e1c5b71d7
+      internalID: -1299392366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_13
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1230
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafdda7a8881cbd4e90d0d9b27f3d330
+      internalID: 2045139525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a84ab2d8fcaf81478d1ce0448f9ebce
+      internalID: -1720973774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 984
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ba50b87a43f704084761fa79158171
+      internalID: 1399068465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_16
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 984
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b80e1a86ab47184b8b23276dfd6337f
+      internalID: 703531905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_17
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 984
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae4e63136683cf438e5799bfdd40266
+      internalID: 962314522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_18
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 984
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5630df619f4314abb55817e0810b8e
+      internalID: 306379913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_19
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 984
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b52679c53450c4fb12fdd45ccb8364
+      internalID: -1398859713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_20
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 984
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f06f702962654b439e99b858b8544a4
+      internalID: -322326213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388929327c75d274a8dc2fe0deb5dd1c
+      internalID: -530886897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 738
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6fccfb83b9a354ab399ffd40a6ed11
+      internalID: -1995722724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_23
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 738
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc38161eb5f96a469d71522ae136b50
+      internalID: -176755671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_24
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 738
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0b6ca05873cf246ba1966b74a6beef
+      internalID: 540584319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_25
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 738
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61784b09a34ffb44fa89caaf1bb68d2c
+      internalID: 1486555406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_26
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 738
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1998a2c8457ddf43974b9ce2c268fff
+      internalID: 1409533071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_27
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 738
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6a0ab2873d654409cdc897faa6637f
+      internalID: 2132314513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f892a1782d04304eae1bbac4b1e2993
+      internalID: 425885679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 492
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f015ea61daafc44bb3ecc487e8e851
+      internalID: -588579749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 492
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa600706469e07a4eabc0d23979e1927
+      internalID: 1648967432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_31
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 492
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9479484cb64ae4f816a1fe2ae45015
+      internalID: -1228263075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_32
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 492
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29290a0483f3d343a6560e475fb071c
+      internalID: -977251473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_33
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 492
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09db79475945769489becd70d2a24a14
+      internalID: 1554996968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_34
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 492
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f089360e7cf3ca34daab8a3e33469f82
+      internalID: -38809354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c06a244739793241af9e647231d9357
+      internalID: 1016176952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 246
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52012cfb2bea8f74c969a31dc54dc1d0
+      internalID: -1832773261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_37
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 246
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3449277686e54d4c991699c3f4ff515
+      internalID: 586762426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_38
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 246
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd98eebcaf71e294c96d1f409fdab83e
+      internalID: -1691330036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_39
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 246
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7cce0fa72358e4cb756b8b1f705c1b
+      internalID: 1756721392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_40
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 246
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc3ad9658f649d4c9382994242c16f0
+      internalID: -1711950579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_41
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 246
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb07d77937b7bc4485dc257336fe0d5
+      internalID: -1902925316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed9b1904ff71604fb8aace20473a1d0
+      internalID: -282154382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_43
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5dba162394a6c4cb7013e678ac1b10
+      internalID: -1962723858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealingEffect 1_44
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 205
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4941064, y: 0.3428355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a616a173589e997479b16b2d6e4c1532
+      internalID: -51450022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HealingEffect 1_0: -620176831
+      HealingEffect 1_1: 1096673140
+      HealingEffect 1_10: -274096013
+      HealingEffect 1_11: 1090341352
+      HealingEffect 1_12: -1299392366
+      HealingEffect 1_13: 2045139525
+      HealingEffect 1_14: -1720973774
+      HealingEffect 1_15: 1399068465
+      HealingEffect 1_16: 703531905
+      HealingEffect 1_17: 962314522
+      HealingEffect 1_18: 306379913
+      HealingEffect 1_19: -1398859713
+      HealingEffect 1_2: -1801978912
+      HealingEffect 1_20: -322326213
+      HealingEffect 1_21: -530886897
+      HealingEffect 1_22: -1995722724
+      HealingEffect 1_23: -176755671
+      HealingEffect 1_24: 540584319
+      HealingEffect 1_25: 1486555406
+      HealingEffect 1_26: 1409533071
+      HealingEffect 1_27: 2132314513
+      HealingEffect 1_28: 425885679
+      HealingEffect 1_29: -588579749
+      HealingEffect 1_3: 1205805374
+      HealingEffect 1_30: 1648967432
+      HealingEffect 1_31: -1228263075
+      HealingEffect 1_32: -977251473
+      HealingEffect 1_33: 1554996968
+      HealingEffect 1_34: -38809354
+      HealingEffect 1_35: 1016176952
+      HealingEffect 1_36: -1832773261
+      HealingEffect 1_37: 586762426
+      HealingEffect 1_38: -1691330036
+      HealingEffect 1_39: 1756721392
+      HealingEffect 1_4: 1814506763
+      HealingEffect 1_40: -1711950579
+      HealingEffect 1_41: -1902925316
+      HealingEffect 1_42: -282154382
+      HealingEffect 1_43: -1962723858
+      HealingEffect 1_44: -51450022
+      HealingEffect 1_5: -722842313
+      HealingEffect 1_6: -1856111617
+      HealingEffect 1_7: 1232434474
+      HealingEffect 1_8: -759780643
+      HealingEffect 1_9: -1323818021
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
