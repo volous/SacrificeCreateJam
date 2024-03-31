@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 57268db40855b774b8d805f3d7f03677
   - enabled: 1
-    path: Assets/Scenes/PelleScene.unity
+    path: Assets/Scenes/GameScene.unity
     guid: 5aefefc6036d2914db48e2fc0b3fa913
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 922f814fdf2a6ea43bc2f926070dd3c4, type: 2}

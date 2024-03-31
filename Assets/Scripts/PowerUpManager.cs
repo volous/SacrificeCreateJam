@@ -45,13 +45,13 @@ public class PowerUpManager : MonoBehaviour
             case 8:
                 pc.AddPowerUp<DashSlashFlash>();
                 break;
-            case 3:
+            case 9:
                 pc.AddPowerUp<SlowAuraPowerUp>();
                 break;
-            case 4:
+            case 10:
                 pc.AddPowerUp<BulletBillPowerUp>();
                 break;
-            case 5:
+            case 11:
                 pc.AddPowerUp<PermiatePowerUp>();
                 break;
             default:
