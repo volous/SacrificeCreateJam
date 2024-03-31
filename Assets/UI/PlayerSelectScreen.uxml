@@ -4,21 +4,21 @@
         <ui:VisualElement name="VisualElement" class="playerLabel" style="align-items: auto; flex-direction: column; justify-content: center; align-self: flex-start; height: 1080px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; top: 0; left: 384px; color: rgb(255, 255, 255); width: 350px; position: relative;">
             <ui:VisualElement style="flex-grow: 1; position: absolute; width: 288px; height: 1016px; background-image: url(&quot;project://database/Assets/UI%20assets/IngamePlayersUI.png?fileID=2800000&amp;guid=058ce8d7077cc58409860f568aa50ef5&amp;type=3#IngamePlayersUI&quot;); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; left: 32px; top: 32px; align-items: center; justify-content: center; align-self: center;">
                 <ui:VisualElement style="flex-grow: 1; position: absolute; top: 128px; -unity-text-align: upper-left; width: 256px; align-items: center; justify-content: center; align-self: center; background-image: none;">
-                    <ui:Label tabindex="-1" text="P1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P1Text" style="position: relative; top: auto; bottom: auto; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(12, 12, 242);" />
+                    <ui:Label tabindex="-1" text="P1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P1Text" style="position: relative; top: auto; bottom: auto; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(12, 12, 242); left: 5px;" />
                     <ui:VisualElement style="flex-grow: 1; width: 64px; height: 96px; background-image: url(&quot;project://database/Assets/Sprites/BluePlayer.png?fileID=2800000&amp;guid=23b08b3d9e183644997be8f920e5c35d&amp;type=3#BluePlayer&quot;);" />
                     <ui:VisualElement style="flex-grow: 1; position: relative; width: 32px; height: 32px; left: -64px; top: -64px;" />
                     <ui:VisualElement style="flex-grow: 1; position: relative; width: 32px; height: 32px; left: 64px; top: -64px;" />
                 </ui:VisualElement>
                 <ui:VisualElement style="flex-grow: 1; position: absolute; top: 352px; width: 256px; align-items: center;">
-                    <ui:Label tabindex="-1" text="P2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P2Text" style="top: auto; position: relative; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(255, 5, 70);" />
+                    <ui:Label tabindex="-1" text="P2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P2Text" style="top: auto; position: relative; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(255, 5, 70); left: 5px;" />
                     <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/RedPlayer.png?fileID=2800000&amp;guid=3b8f787e51652f545aa5f28fbb3fe55a&amp;type=3#RedPlayer&quot;); cursor: initial; width: 64px; height: 96px;" />
                 </ui:VisualElement>
                 <ui:VisualElement style="flex-grow: 1; position: absolute; top: 576px; width: 256px; align-items: center;">
-                    <ui:Label tabindex="-1" text="P3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P3Text" style="top: auto; position: relative; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(67, 188, 25);" />
+                    <ui:Label tabindex="-1" text="P3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P3Text" style="top: auto; position: relative; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(67, 188, 25); left: 5px;" />
                     <ui:VisualElement style="flex-grow: 1; width: 64px; height: 96px; background-image: url(&quot;project://database/Assets/Sprites/GreenPlayer.png?fileID=2800000&amp;guid=0bc99a2ed3e49de44a837e1ad116991a&amp;type=3#GreenPlayer&quot;);" />
                 </ui:VisualElement>
                 <ui:VisualElement style="flex-grow: 1; position: absolute; top: 800px; width: 256px; align-items: center;">
-                    <ui:Label tabindex="-1" text="P4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P4Text" style="top: auto; position: relative; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(212, 242, 12);" />
+                    <ui:Label tabindex="-1" text="P4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="P4Text" style="top: auto; position: relative; height: auto; -unity-text-align: upper-left; align-self: center; color: rgb(212, 242, 12); left: 5px;" />
                     <ui:VisualElement style="flex-grow: 1; width: 64px; height: 96px; background-image: url(&quot;project://database/Assets/Sprites/YellowPlayer.png?fileID=2800000&amp;guid=aa078eadf264fef428ba5c381c90042c&amp;type=3#YellowPlayer&quot;);" />
                 </ui:VisualElement>
             </ui:VisualElement>
