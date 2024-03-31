@@ -70,12 +70,13 @@
 .pressStart {
     -unity-font: url("project://database/Assets/UI%20assets/Fonts/ThaleahFat.ttf?fileID=12800000&guid=77d17bbed015a754d97c2bca3c52f7a5&type=3#ThaleahFat");
     -unity-font-definition: initial;
-    transition-timing-function: ease;
-    transition-duration: 2s;
 }
 
 .pressStart:hover {
     transition-timing-function: ease-in, ease-out;
     scale: 1.1 1.1;
     color: rgba(27, 27, 27, 0.5);
+    transition-duration: 1s, 1s;
+    transition-delay: 0s, 0s;
+    transition-property: all, all;
 }
