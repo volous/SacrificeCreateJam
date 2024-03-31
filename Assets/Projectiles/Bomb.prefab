@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3279277901102347040, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: AudioName
+      value: Bomb
+      objectReference: {fileID: 0}
     - target: {fileID: 4274985944842772839, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
       propertyPath: m_Name
       value: Bomb
