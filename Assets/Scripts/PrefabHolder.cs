@@ -12,4 +12,5 @@ public class PrefabHolder : MonoBehaviour
     public GameObject slowArea;
     public GameObject healingPotion;
     public GameObject swapper;
+    public List<Sprite> playerSprites;
 }

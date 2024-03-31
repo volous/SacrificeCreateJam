@@ -12,18 +12,20 @@ public class UIHandler : MonoBehaviour
     [SerializeField] private List<PlayerController> players;
     [SerializeField] private Dictionary<PlayerController,VisualElement> playersAndUI = new();
     [SerializeField] private Texture2D fireIcon,bombIcon, boostIcon,hookIcon,confusionIcon,slowIcon,boneWallIcon,dashIcon,bulletBillIcon,gragasUltIcon,ghostIcon,swapperIcon,healingIcon;
-
+    [SerializeField] private List<Texture2D> playerIcons;
+    
     private void Start()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
     }
 
-    public void AddPlayer(PlayerController pc)
+    public void AddPlayer(PlayerController pc,int pNumber)
     {
         VisualElement pUI =playerUI.Instantiate();
         root.Q<VisualElement>("Holder").Add(pUI);
         players.Add(pc);
         playersAndUI.Add(pc,pUI);
+        pUI.Q<VisualElement>("PlayerIcon").style.backgroundImage = new StyleBackground(playerIcons[pNumber]);
     }
 
     private void Update()
@@ -36,7 +38,6 @@ public class UIHandler : MonoBehaviour
             {
                 ui.Q<VisualElement>("HP" + i).style.display = i == pc.GetHealth()? DisplayStyle.Flex:DisplayStyle.None;
             }
-
             Texture2D icon = fireIcon;
             if (pc.TryGetPowerUp(out BasePowerUp powerUp))
             {
@@ -87,7 +88,6 @@ public class UIHandler : MonoBehaviour
                 }
 
             }
-            
             ui.Q<VisualElement>("PowerUp").style.backgroundImage = pc.HasPowerUp()? new StyleBackground(icon): new StyleBackground(StyleKeyword.None);
         }
     }

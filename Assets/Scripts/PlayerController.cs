@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     
     
     [SerializeField] private BasePowerUp currentPowerUp;
+    [SerializeField] private SpriteRenderer playerSprite;
+    
 
     private void Awake()
     {
@@ -209,5 +211,10 @@ public class PlayerController : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void UpdateSprite(int playerNumber)
+    {
+        playerSprite.sprite = GetComponent<PrefabHolder>().playerSprites[playerNumber];
     }
 }

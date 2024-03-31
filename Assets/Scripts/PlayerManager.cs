@@ -22,9 +22,11 @@ public class PlayerManager : MonoBehaviour
         players.Add(pc);
         pc.Immobilize();
         pc.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        pc.UpdateSprite(numberOfPlayers);
         numberOfPlayers++;
         pc.transform.position = new Vector3(-5,5-(numberOfPlayers*2),0);
-        uiHandler.AddPlayer(pc);
+        
+        uiHandler.AddPlayer(pc, numberOfPlayers-1);
     }
 
     public void ReleasePlayers()

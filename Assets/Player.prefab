@@ -258,6 +258,7 @@ MonoBehaviour:
   controlSpeedScaler: 0
   pointer: {fileID: 3857883041526881281}
   currentPowerUp: {fileID: 0}
+  playerSprite: {fileID: 1728539765489691037}
 --- !u!50 &1932919329349398288
 Rigidbody2D:
   serializedVersion: 4
@@ -341,3 +342,12 @@ MonoBehaviour:
   slowArea: {fileID: 2359872487351595347, guid: 371b227634fb4bf4cb165056b705f1c8, type: 3}
   healingPotion: {fileID: 7444258311380966802, guid: 5c7fe8afc5c863848b93b0d58976fa53, type: 3}
   swapper: {fileID: 0}
+  playerSprites:
+  - {fileID: 21300000, guid: 3b8f787e51652f545aa5f28fbb3fe55a, type: 3}
+  - {fileID: 21300000, guid: 27afbc0e1adb1364ebb7b28bb364fad2, type: 3}
+  - {fileID: 21300000, guid: aa078eadf264fef428ba5c381c90042c, type: 3}
+  - {fileID: 21300000, guid: 889f9b49fa10e96488a875cbae83355b, type: 3}
+  - {fileID: 21300000, guid: 3650d5cb97db4f444a1c15f2107e2ae8, type: 3}
+  - {fileID: 21300000, guid: 1a8002b72df0a4948be9195ce5846d4b, type: 3}
+  - {fileID: 21300000, guid: 0bc99a2ed3e49de44a837e1ad116991a, type: 3}
+  - {fileID: 21300000, guid: 23b08b3d9e183644997be8f920e5c35d, type: 3}
