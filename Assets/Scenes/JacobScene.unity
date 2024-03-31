@@ -374,6 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerUI: {fileID: 9197481963319205126, guid: b70b5cacb239b7e4dbd068b4c5e7e4b1, type: 3}
   players: []
+  fireIcon: {fileID: 0}
 --- !u!114 &289587173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,8 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5336ed36a06fc884c82bbf61c69b1b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockPowerUpForTesting: 0
-  powerUpToTest: 4
+  lockPowerUpForTesting: 1
+  powerUpToTest: 0
 --- !u!4 &1131124942
 Transform:
   m_ObjectHideFlags: 0
@@ -1452,6 +1453,7 @@ MonoBehaviour:
   endScreen: {fileID: 1427859555}
   playerSelectScreen: {fileID: 388276236}
   playerManager: {fileID: 0}
+  countDown: {fileID: 6379950607014766712, guid: 674410fa40de08042997d7c801c7f027, type: 3}
 --- !u!4 &1854824185
 Transform:
   m_ObjectHideFlags: 0

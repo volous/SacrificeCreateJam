@@ -16,7 +16,19 @@ public class Confusion : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = Vector2.up * flySpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Player") && col.gameObject != owner)
+        {
+            if (col.TryGetComponent(out PlayerController playerController))
+            {
+                playerController.SpeedChange(-playerController.moveSpeed / 4, 4f);
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    /*private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject != owner)
         {
@@ -28,12 +40,12 @@ public class Confusion : MonoBehaviour
     {
         Instantiate(confusionAOEPF, transform.position, Quaternion.identity);
         Destroy(gameObject);
-    }
+    }*/
 
     public void Setup(Vector2 dir, GameObject pc)
     {
-        GetComponent<Rigidbody2D>().velocity = dir * flyTime;
+        GetComponent<Rigidbody2D>().velocity = dir * flySpeed;
         owner = pc;
-        Invoke("Explode",flyTime);
+        Destroy(gameObject, flyTime);
     }
 }

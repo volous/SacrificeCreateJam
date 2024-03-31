@@ -8,6 +8,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1553285403804546948, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_Radius
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771870203605126131, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e045c1b0adb9775428c36a28cf58156d, type: 3}
+    - target: {fileID: 2771870203605126131, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771870203605126131, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771870203605126131, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3279277901102347040, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
       propertyPath: effectPF
       value: 
@@ -15,6 +35,18 @@ PrefabInstance:
     - target: {fileID: 4274985944842772839, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
       propertyPath: m_Name
       value: HealingPotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481445129561429866, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481445129561429866, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481445129561429866, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4481445129561429866, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
       propertyPath: m_LocalPosition.x
