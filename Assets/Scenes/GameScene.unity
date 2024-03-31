@@ -505,6 +505,18 @@ MonoBehaviour:
   playerUI: {fileID: 9197481963319205126, guid: b70b5cacb239b7e4dbd068b4c5e7e4b1, type: 3}
   players: []
   fireIcon: {fileID: 2800000, guid: e76bde740f10cc14e8872d46973baf72, type: 3}
+  bombIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  boostIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  hookIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  confusionIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  slowIcon: {fileID: 2800000, guid: 991bd5f2bff7e0e4491fca39a9484a7c, type: 3}
+  boneWallIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  dashIcon: {fileID: 2800000, guid: d4d54d1001d18654693c7fb40803710a, type: 3}
+  bulletBillIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  gragasUltIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  ghostIcon: {fileID: 2800000, guid: 6f65f5116d58b0848980b078d7ecac9a, type: 3}
+  swapperIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
+  healingIcon: {fileID: 2800000, guid: 61a373f79705d934a857cd6fd16205e6, type: 3}
 --- !u!114 &289587173
 MonoBehaviour:
   m_ObjectHideFlags: 0

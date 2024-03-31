@@ -200,4 +200,14 @@ public class PlayerController : MonoBehaviour
     {
         beingControlled = false;
     }
+
+    public bool TryGetPowerUp(out BasePowerUp basePowerUp)
+    {
+        basePowerUp = currentPowerUp;
+        if (HasPowerUp())
+        {
+            return true;
+        }
+        return false;
+    }
 }

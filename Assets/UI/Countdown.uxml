@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement style="flex-grow: 1; justify-content: center; align-self: center;">
-        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Countdown" style="font-size: 48px;" />
+        <ui:Label tabindex="-1" text="3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Countdown" style="font-size: 183px; -unity-font: url(&quot;project://database/Assets/UI%20assets/Fonts/ThaleahFat.ttf?fileID=12800000&amp;guid=77d17bbed015a754d97c2bca3c52f7a5&amp;type=3#ThaleahFat&quot;); -unity-font-style: bold; -unity-text-align: upper-center; color: rgb(122, 0, 0); text-shadow: 12.6px 9.400001px 0 rgb(66, 21, 21); -unity-text-outline-width: 0;" />
     </ui:VisualElement>
 </ui:UXML>

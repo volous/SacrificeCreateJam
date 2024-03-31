@@ -1,9 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SlowAura : MonoBehaviour
 {
+    private void Start()
+    {
+        Invoke("Remove",4);
+    }
+
+    public void Remove()
+    {
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
