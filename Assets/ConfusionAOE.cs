@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class ConfusionAOE : MonoBehaviour
 {
+    [SerializeField] private float time = 2.5f;
+
+    private void Start()
+    {
+        Destroy(gameObject, time);
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))

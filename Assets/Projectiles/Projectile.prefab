@@ -163,5 +163,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPF: {fileID: 4653975254409475605, guid: cb1457534c4364b4da9415e014f40521, type: 3}
   flyTime: 1.5
-  flySpeed: 2
+  flySpeed: 4
   owner: {fileID: 0}

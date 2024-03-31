@@ -10,7 +10,7 @@ public class PowerUpManager : MonoBehaviour
 
     public void GivePowerUp(PlayerController pc)
     {
-        int i = Random.Range(0, 9);
+        int i = Random.Range(0, 12);
         if (lockPowerUpForTesting)
         {
             i = powerUpToTest;
