@@ -14,6 +14,7 @@ public class ConfusionPowerUp : BasePowerUp
 
     public override void OnActivate(PlayerController pc, Vector2 lookDirection)
     {
+        FindObjectOfType<AudioManager>().Play("Confusion");
         Confusion c = Instantiate(ConfusionPF, pc.transform.position + new Vector3(lookDirection.x, lookDirection.y), Quaternion.identity).GetComponent<Confusion>();
         c.Setup(lookDirection,pc.gameObject);
         Destroy(this);

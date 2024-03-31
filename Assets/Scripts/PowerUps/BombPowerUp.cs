@@ -8,7 +8,8 @@ public class BombPowerUp : BasePowerUp
 {
     public override void OnActivate(PlayerController pc, Vector2 lookDirection)
     {
-       Instantiate(GetComponent<PrefabHolder>().BombPF,
+        FindObjectOfType<AudioManager>().Play("Bomb");
+        Instantiate(GetComponent<PrefabHolder>().BombPF,
            pc.transform.position+new Vector3(lookDirection.x,lookDirection.y),
            Quaternion.identity).GetComponent<Projectile>().Setup(lookDirection,pc.gameObject);
     }
