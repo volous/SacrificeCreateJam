@@ -12,7 +12,6 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-
         if (instance == null)
             instance = this;
         else
@@ -36,7 +35,8 @@ public class AudioManager : MonoBehaviour
 
     public void Start()
     {
-        Play("TitleMusic");
+        Play("MenuMusic");
+        Debug.Log("I'm playing");
     }
 
     public void Play(string name)
