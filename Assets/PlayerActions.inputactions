@@ -177,11 +177,33 @@
                 },
                 {
                     "name": "",
+                    "id": "a5ff6c64-a5d2-4443-8537-1788def7e469",
+                    "path": "<HID::Core (Plus) Wired Controller>/hat",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f9d4f8a3-e636-48b8-9a52-032c28fb2dcd",
+                    "path": "<HID::Core (Plus) Wired Controller>/hat",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -243,6 +265,17 @@
                 },
                 {
                     "name": "",
+                    "id": "d3fe1294-50cf-49ad-af60-c614f913c7fc",
+                    "path": "<HID::Core (Plus) Wired Controller>/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "24d67888-f832-4969-830e-bab0a91a35b6",
                     "path": "<Gamepad>/start",
                     "interactions": "",
@@ -256,6 +289,17 @@
                     "name": "",
                     "id": "0559ace5-a678-4de8-b50b-b30d76f79817",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9022c319-021c-44d3-9ac2-b94ca596f7f2",
+                    "path": "<HID::Core (Plus) Wired Controller>/button10",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
