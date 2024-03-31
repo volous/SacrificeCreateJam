@@ -11,7 +11,8 @@ public class UIHandler : MonoBehaviour
     [SerializeField] private VisualTreeAsset playerUI;
     [SerializeField] private List<PlayerController> players;
     [SerializeField] private Dictionary<PlayerController,VisualElement> playersAndUI = new();
-    
+    [SerializeField] private Texture2D fireIcon;
+
     private void Start()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
@@ -35,6 +36,7 @@ public class UIHandler : MonoBehaviour
             {
                 ui.Q<VisualElement>("HP" + i).style.display = i == pc.GetHealth()? DisplayStyle.Flex:DisplayStyle.None;
             }
+            ui.Q<VisualElement>("PowerUp").style.backgroundImage = pc.HasPowerUp()? new StyleBackground(fireIcon): new StyleBackground(StyleKeyword.None);
         }
     }
 }

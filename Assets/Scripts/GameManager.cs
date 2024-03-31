@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public bool gameEnded;
     [SerializeField] private GameObject endScreen,playerSelectScreen;
     [SerializeField] private PlayerManager playerManager;
+    [SerializeField] private GameObject countDown;
+    
 
     private void Start()
     {
@@ -27,6 +29,13 @@ public class GameManager : MonoBehaviour
     {
         playerSelectScreen.SetActive(false);
         gameStarted = true;
+        Instantiate(countDown);
+        Invoke("Release",3);
+    }
+
+    public void Release()
+    {
+        
         playerManager.ReleasePlayers();
     }
 

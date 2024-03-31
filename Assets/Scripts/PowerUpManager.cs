@@ -15,7 +15,6 @@ public class PowerUpManager : MonoBehaviour
         {
             i = powerUpToTest;
         }
-        print(i);
         switch (i)
         {
             case 0:
