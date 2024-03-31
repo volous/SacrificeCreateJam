@@ -7,12 +7,7 @@ public class SlowAura : MonoBehaviour
 {
     private void Start()
     {
-        Invoke("Remove",4);
-    }
-
-    public void Remove()
-    {
-        
+        Destroy(gameObject, 4);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
