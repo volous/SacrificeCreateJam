@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9c8080069e59d6a4b8ea8d355cf4409a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hookPF: {fileID: 4274985944842772839, guid: bdef2df75b6bf6047904af94ed041ab4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

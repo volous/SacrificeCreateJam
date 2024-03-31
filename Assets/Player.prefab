@@ -332,7 +332,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d459463fa01982478becdc59fd6e633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BombPF: {fileID: 4653975254409475605, guid: cb1457534c4364b4da9415e014f40521, type: 3}
+  BombPF: {fileID: 4274985944842772839, guid: 1813691dfaab26d4cbb0152332564a5a, type: 3}
+  BarrelPF: {fileID: 4274985944842772839, guid: 1da4d3fb9d439364c958c6dac152457f, type: 3}
+  ConfusionPF: {fileID: 4274985944842772839, guid: d3c5ce7d5f449b04897b9639f5a51947, type: 3}
+  HookPF: {fileID: 4274985944842772839, guid: bdef2df75b6bf6047904af94ed041ab4, type: 3}
   walls:
   - {fileID: 3794722018986066866, guid: 72bef07de85a07c4382bf530610d24f9, type: 3}
   slowArea: {fileID: 2359872487351595347, guid: 371b227634fb4bf4cb165056b705f1c8, type: 3}

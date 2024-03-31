@@ -51,7 +51,8 @@ public class PlayerController : MonoBehaviour
     void OnLook(InputValue iv)
     {
         Vector2 inputVector = iv.Get<Vector2>();
-        lookDirection = inputVector.normalized;
+        if (inputVector != Vector2.zero)
+            lookDirection = inputVector.normalized;
     }
     void FixedUpdate()
     {
@@ -95,7 +96,12 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        rb.velocity =immobilized ? Vector3.zero: moveDirection * (moveSpeed * speedScaler);
+        if (!immobilized)
+        {
+            rb.velocity = moveDirection * (moveSpeed * speedScaler);
+        }
+
+        //rb.velocity = immobilized ? Vector3.zero : moveDirection * (moveSpeed * speedScaler);
     }
 
     void OnFire()

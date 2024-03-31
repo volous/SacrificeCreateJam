@@ -13,6 +13,7 @@
 
 .header:hover {
     scale: 1.2 1.2;
+    cursor: initial;
 }
 
 .button {
@@ -55,5 +56,27 @@
 .playerLabel {
     -unity-font: url("project://database/Assets/UI%20assets/Fonts/ThaleahFat.ttf?fileID=12800000&guid=77d17bbed015a754d97c2bca3c52f7a5&type=3#ThaleahFat");
     -unity-font-definition: initial;
-    font-size: 80px;
+    font-size: 65px;
+}
+
+.button:focus {
+    scale: 1.1 1.1;
+    translate: 0 -10px;
+    -unity-background-image-tint-color: rgb(193, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: url("project://database/Assets/UI%20assets/Cursor2.png?fileID=2800000&guid=f1965cbe313585243b9ec56c56797d72&type=3#Cursor2");
+}
+
+.pressStart {
+    -unity-font: url("project://database/Assets/UI%20assets/Fonts/ThaleahFat.ttf?fileID=12800000&guid=77d17bbed015a754d97c2bca3c52f7a5&type=3#ThaleahFat");
+    -unity-font-definition: initial;
+}
+
+.pressStart:hover {
+    transition-timing-function: ease-in, ease-out;
+    scale: 1.1 1.1;
+    color: rgba(27, 27, 27, 0.5);
+    transition-duration: 1s, 1s;
+    transition-delay: 0s, 0s;
+    transition-property: all, all;
 }
