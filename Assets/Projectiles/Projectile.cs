@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float flySpeed = 2;
     
     [SerializeField] private GameObject owner;
-
+    [SerializeField] private string AudioName;
 
     private void Awake()
     {
@@ -27,6 +27,8 @@ public class Projectile : MonoBehaviour
     }
 
     public void Explode(){
+        if (AudioName != "")
+            FindObjectOfType<AudioManager>().Play(AudioName);
         Instantiate(effectPF,transform.position,quaternion.identity);
         Destroy(gameObject);
     }
