@@ -10,7 +10,7 @@ public class PowerUpManager : MonoBehaviour
 
     public void GivePowerUp(PlayerController pc)
     {
-        int i = Random.Range(0, 3);
+        int i = Random.Range(0, 9);
         if (lockPowerUpForTesting)
         {
             i = powerUpToTest;
@@ -32,6 +32,18 @@ public class PowerUpManager : MonoBehaviour
                 break;
             case 4:
                 pc.AddPowerUp<HookPowerUp>();
+                break;
+            case 5:
+                pc.AddPowerUp<GragasUltPowerup>();
+                break;
+            case 6:
+                pc.AddPowerUp<SlowAuraPowerUp>();
+                break;
+            case 7:
+                pc.AddPowerUp<DefinetlyNotAniviaWall>();
+                break;
+            case 8:
+                pc.AddPowerUp<DashSlashFlash>();
                 break;
             default:
                 pc.AddPowerUp<BombPowerUp>();
