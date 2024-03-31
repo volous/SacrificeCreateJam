@@ -28,7 +28,10 @@ public class PowerUpManager : MonoBehaviour
                 pc.AddPowerUp<SwappingPowerUp>();
                 break;
             case 3:
-                pc.AddPowerUp<GragasUltPowerup>();
+                pc.AddPowerUp<ConfusionPowerUp>();
+                break;
+            case 4:
+                pc.AddPowerUp<HookPowerUp>();
                 break;
             default:
                 pc.AddPowerUp<BombPowerUp>();

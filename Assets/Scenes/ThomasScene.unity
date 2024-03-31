@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockPowerUpForTesting: 1
-  powerUpToTest: 2
+  powerUpToTest: 3
 --- !u!4 &1131124942
 Transform:
   m_ObjectHideFlags: 0
